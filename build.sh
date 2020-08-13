@@ -1,0 +1,1 @@
+hugo -d docs && npm run build
