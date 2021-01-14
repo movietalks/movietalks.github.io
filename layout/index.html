@@ -7,7 +7,8 @@
     <div class="Container">
       {{ partial "header.html" . }}
       <main class="Main">
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "episode") }}
+
+        {{ $paginator := .Paginate .Site.RegularPages }} 
         <ul class="EpisodeList">
           {{ range $paginator.Pages }}
             <li class="Episode">
@@ -17,7 +18,8 @@
               </h2>
             </li>
           {{ end }}
-        </ul>
+        </ul> 
+       
         <nav>
           {{ if .Paginator.HasPrev }}
             <div>
