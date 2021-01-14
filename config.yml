@@ -11,5 +11,6 @@ params:
   itunes: https://itunes.apple.com/podcast/id123456789
   android: /index.xml
   feed: /index.xml
+  desc: Подкаст о кино, в котором ничего не понятно
 permalinks:
   post: "/:title"
