@@ -12,5 +12,6 @@ params:
   android: /index.xml
   feed: /index.xml
   desc: Подкаст о кино, в котором ничего не понятно
+  summary: Странное кино с налетом гениальности, которое обсуждают ведущие с зубным налетом
 permalinks:
   post: "/:title"
