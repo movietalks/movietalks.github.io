@@ -1,1 +1,1 @@
-hugo -d docs && npm run build
+./hugo_0.80.0_macOS-64bit/hugo -d docs && npm run build
