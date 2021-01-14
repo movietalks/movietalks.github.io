@@ -1,4 +1,4 @@
-baseurl: "/"
+baseurl: "https://movie-which.netlify.app"
 title: "Кино которое"
 footnotereturnlinkcontents: "↩"
 contentdir: "content"
