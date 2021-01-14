@@ -13,5 +13,6 @@ params:
   feed: /index.xml
   desc: Подкаст о кино, в котором ничего не понятно
   summary: Странное кино с налетом гениальности, которое обсуждают ведущие с зубным налетом
+  StaticURL: "https://movie-which.netlify.app"
 permalinks:
   post: "/:title"
