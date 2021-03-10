@@ -1,5 +1,5 @@
-baseurl: "https://movie-which.netlify.app"
-title: "Кино которое"
+baseurl: "https://movietalks.netlify.app"
+title: "МувиТокс"
 footnotereturnlinkcontents: "↩"
 contentdir: "content"
 layoutdir: "layout"
@@ -13,6 +13,6 @@ params:
   feed: /index.xml
   desc: Подкаст о кино, в котором ничего не понятно
   summary: Странное кино с налетом гениальности, которое обсуждают ведущие с зубным налетом
-  StaticURL: "https://movie-which.netlify.app"
+  StaticURL: "https://moviеtalks.netlify.app"
 permalinks:
   post: "/:title"
