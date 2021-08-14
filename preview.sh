@@ -1,0 +1,1 @@
+cd docs &&  python -m SimpleHTTPServer 1313 
