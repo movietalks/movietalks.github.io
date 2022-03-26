@@ -1,4 +1,4 @@
-baseurl: "https://movietalks.netlify.app"
+baseurl: "https://movietalks.ru"
 title: "МувиТокс"
 footnotereturnlinkcontents: "↩"
 contentdir: "content"
@@ -13,6 +13,6 @@ params:
   feed: /index.xml
   desc: Подкаст о кино, в котором ничего не понятно
   summary: Странное кино с налетом гениальности, которое обсуждают ведущие с зубным налетом
-  StaticURL: "https://moviеtalks.netlify.app"
+  StaticURL: "https://movietalks.ru"
 permalinks:
   post: "/:title"
