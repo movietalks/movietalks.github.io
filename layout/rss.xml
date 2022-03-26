@@ -33,6 +33,7 @@
         <guid>{{ .Permalink }}</guid>
         <description>{{ .Content | html }}</description>
         <itunes:explicit>no</itunes:explicit>
+        <itunes:image href="{{ .Params.Image }}" />
         <itunes:subtitle>{{ .Summary | html }}</itunes:subtitle>
         <itunes:duration>{{ .Params.Duration }}</itunes:duration>
         <enclosure url="{{ .Site.Params.StaticURL }}{{ .Params.Audio }}" type="audio/mpeg" length="{{ .Params.Filesize }}" />
