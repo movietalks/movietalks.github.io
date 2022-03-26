@@ -5,6 +5,7 @@ contentdir: "content"
 layoutdir: "layout"
 staticdir: "static"
 publishdir: "docs"
+paginate: 50
 uglyURLs: false
 metaDataFormat: "yaml"
 params:
