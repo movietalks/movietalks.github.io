@@ -16,9 +16,7 @@
     <itunes:keywords>movie,review</itunes:keywords>
     <itunes:subtitle>{{ .Site.Params.Desc }}</itunes:subtitle>
     <itunes:summary>{{ .Site.Params.Summary }}</itunes:summary>
-     <itunes:category text="Film Reviews">
-      <itunes:category text="Film Reviews"/>
-    </itunes:category>
+     <itunes:category text="Film Reviews"/>
     <itunes:owner>
       <itunes:name>Dima, Natalia, Egor, Ivan, Janna, Maria</itunes:name>
       <itunes:email>volyihin@gmail.com</itunes:email>
