@@ -15,5 +15,6 @@ params:
   desc: Подкаст о кино, в котором ничего не понятно
   summary: Странное кино с налетом гениальности, которое обсуждают ведущие с зубным налетом
   StaticURL: "https://movietalks.ru"
+  LanguageCode: ru
 permalinks:
   post: "/:title"
