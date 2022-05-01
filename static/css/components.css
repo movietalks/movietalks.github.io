@@ -45,9 +45,9 @@
   margin: 0 calc((100vw - 100% + 2em) / -2);
   padding: 0 calc((100vw - 100% + 2em) / 2);
   background-color: #333;
-  background-image: url("/img/background.jpg");
+  background-image: url("/img/background-turin-horse.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 35%;
   background-size: cover;
 }
 
