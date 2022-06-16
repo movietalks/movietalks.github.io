@@ -17,5 +17,6 @@ params:
   summary: Странное кино с налетом гениальности, которое обсуждают ведущие с зубным налетом
   StaticURL: "https://movietalks.ru"
   LanguageCode: ru
+  yandexS3: "https://storage.yandexcloud.net/movietalks/"
 permalinks:
   post: "/:title"

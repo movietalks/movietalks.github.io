@@ -18,8 +18,9 @@
             </a>
           {{ end }}
         </ul>
+
         <audio
-          src="{{ .Params.audio }}"
+          src="{{ .Site.Params.yandexS3 }}{{.Params.Audio}}"
           controls="controls"
           preload="auto">
         </audio>
