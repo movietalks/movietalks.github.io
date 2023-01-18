@@ -1,10 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
 
-    {{ $url_get := "https://storage.yandexcloud.net/movietalks/?list-type?v={{now.UnixNano}}"}}
-
-    {{ $xml_data := resources.GetRemote $url_get | transform.Unmarshal }}
-
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
     <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
@@ -42,13 +38,7 @@
         <itunes:subtitle>{{ .Summary | html }}</itunes:subtitle>
         <itunes:duration>{{ .Params.Duration }}</itunes:duration>
 
-        {{$audio_name := .Params.Audio}}
-
-        {{range $xml_data.Contents}}
-          {{if eq .Key $audio_name}} 
-            <enclosure url="{{$.Site.Params.yandexS3}}{{ .Key }}" type="audio/mpeg" length="{{ .Size }}"/>
-          {{end}}
-        {{end}}
+        <enclosure url="{{$.Site.Params.yandexS3}}{{ .Params.Audio }}" type="audio/mpeg" length="{{  .Params.Size }}"/>
       </item>
     {{ end }}
   </channel>
