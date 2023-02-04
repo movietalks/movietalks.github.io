@@ -7,7 +7,7 @@
     <div class="Container">
       {{ partial "header.html" . }}
       <main class="Main">
-        <h2>People</h2>
+        <h2>Те самые</h2>
         <ul class="People">
           {{ range $person := .Params.people }}
             <a href="{{ index $.Site.Data.people $person "url" }}">
