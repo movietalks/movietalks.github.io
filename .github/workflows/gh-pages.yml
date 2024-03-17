@@ -26,8 +26,12 @@ jobs:
       #     go-version: '>=1.17.0'
       # - run: go run exporter/main.go
 
-      - name: Install npm packages
-        run: npm install 
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: Install pnpm packages
+        run: pnpm install 
 
       - name: Build
         run: hugo --minify -D
