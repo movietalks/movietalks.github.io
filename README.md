@@ -1,12 +1,19 @@
-[movie-which](https://movie-which.netlify.app)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/85f4be15-c2c6-4daa-ba7c-5c9f094c7aa5/deploy-status)](https://app.netlify.com/sites/movietalks/deploys)
+# faangtalk.github.io
+
+https://faangtalk.github.io
+
+Канал с анонсами канала https://youtube.com/@faangtalk/
+
+Чат по подготовке к интервью https://t.me/faangtalk
 
 ```
-git add content/episode/*
+# brew install hugo
+# pnpm install
 
-git commit -m "new episode"
+make build
 
-git push origin master 
+make preview
 
+# open http://localhost:1313/
 ```
