@@ -5,7 +5,8 @@ contentdir: "content"
 layoutdir: "layout"
 staticdir: "static"
 publishdir: "docs"
-paginate: 50
+pagination:
+  pagerSize: 50
 uglyURLs: false
 metaDataFormat: "yaml"
 LanguageCode: ru
