@@ -1,5 +1,13 @@
 <header class="Header">
-  <h1 class="Header__Title">
-    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-  </h1>
+  <div class="Header__Logo">
+    <a href="{{ .Site.BaseURL }}">
+      <img src="/img/600x600-movietoks.webp" alt="{{ .Site.Title }}">
+    </a>
+  </div>
+  <div class="Header__Text">
+    <h1 class="Header__Title">
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    </h1>
+    <p class="Header__Tagline">{{ .Site.Params.desc }}</p>
+  </div>
 </header>

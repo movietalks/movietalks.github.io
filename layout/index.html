@@ -7,6 +7,21 @@
     <div class="Container">
       {{ partial "header.html" . }}
       <main class="Main">
+        <div class="PodcastLinks">
+          <h2>{{ .Site.Params.Listen }}</h2>
+          <a href="{{ .Site.Params.itunes }}" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14.5c-2.49 0-4.5-2.01-4.5-4.5S9.51 7.5 12 7.5s4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zm0-5.5c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"/></svg>
+            Apple Podcasts
+          </a>
+          <a href="{{ .Site.Params.android }}" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            YouTube Music
+          </a>
+          <a href="{{ .Site.Params.yandex }}" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            Yandex Music
+          </a>
+        </div>
 
         {{ $paginator := .Paginate .Site.RegularPages }} 
         <ul class="EpisodeList">
@@ -16,6 +31,7 @@
               <h2 class="Episode__Title">
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
               </h2>
+              <a href="{{ .RelPermalink }}" class="Episode__Button">Слушать</a>
             </li>
           {{ end }}
         </ul> 
