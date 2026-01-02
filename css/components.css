@@ -19,6 +19,31 @@
   list-style-type: none;
 }
 
+.Episode {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+.Episode__Button {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin-top: 0.5em;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  border-radius: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Episode__Button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-decoration: none;
+}
+
 .People {
   display: flex;
   flex-direction: row;
@@ -41,27 +66,100 @@
 }
 
 .Header {
+  display: flex;
+  align-items: center;
+  gap: 2em;
   height: var(--height-header);
   margin: 0 calc((100vw - 100% + 2em) / -2);
-  padding: 0 calc((100vw - 100% + 2em) / 2);
+  padding: 1em calc((100vw - 100% + 2em) / 2);
   background-color: #333;
-  background-image: url("/img/background-turin-horse.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 35%;
-  background-size: cover;
+}
+
+.Header__Logo {
+  flex-shrink: 0;
+}
+
+.Header__Logo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.Header__Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Header__Title {
-  text-shadow:
-    3px 3px 10px #333,
-    3px -3px 10px #333,
-    -3px 3px 10px #333,
-    -3px -3px 10px #333;
+  margin: 0;
 }
 
 .Header__Title a {
   text-decoration: none;
   color: #fff;
+  font-size: 2em;
+}
+
+.Header__Tagline {
+  margin: 0.5em 0 0 0;
+  color: #ccc;
+  font-size: 1.2em;
+}
+
+.PodcastLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8em;
+  margin: 1.5em 0;
+  padding: 1.5em;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.PodcastLinks h2 {
+  width: 100%;
+  margin: 0 0 0.5em 0;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.PodcastLinks a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.PodcastLinks a:nth-of-type(1) {
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+}
+
+.PodcastLinks a:nth-of-type(2) {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+}
+
+.PodcastLinks a:nth-of-type(3) {
+  background: linear-gradient(135deg, #f39c12, #f1c40f);
+  color: #333;
+}
+
+.PodcastLinks a svg {
+  flex-shrink: 0;
+}
+
+.PodcastLinks a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .Main {
